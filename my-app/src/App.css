@@ -2,6 +2,21 @@
   text-align: center;
 }
 
+body{
+  background-color:#18122B ;
+  color: #cec4f1;
+}
+h1{
+  color:635985;
+}
+nav{
+  display: flex;
+  
+}
+.active{
+  color: #cec4f1 ;
+  background: #382e5a ;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

@@ -1,28 +1,29 @@
 import React from "react";
 
-export default function NavBar(){
+export default function NavBar(currentPage,pageChange){
     return(
-      <ul>
+      <ul className="nav">
         <li className="nav">
-            <a href="#home" onClick={()=>handlePageChange('Home') } 
-            className={currentPage === 'Home'? 'active' : 'notActive'}>Home</a>
+         
+            <a href="#home" onClick={()=>pageChange('Home') } 
+            className={currentPage === 'Home'? 'active' : 'notActive'}>Home</a> 
         
         </li>
         <li className="nav">
-            <a href="#about" onClick={()=>handlePageChange('About') } 
+            <a href="#about" onClick={()=> pageChange('About') } 
             className={currentPage === 'About'? 'active' : 'notActive'}>About</a>
         
         </li>
         <li className="nav">
-            <a href="resume" onClick={()=>handlePageChange('Resume') } 
+            <a href="#resume" onClick={()=>pageChange('Resume') } 
             className={currentPage === 'Resume'? 'active' : 'notActive'}>Resume</a>
         
         </li>
         <li className="nav">
-            <a href="Contact" onClick={()=>handlePageChange('Contact') } 
+            <a href="#Contact" onClick={()=>pageChange('Contact') } 
             className={currentPage === 'Contact'? 'active' : 'notActive'}>Contact</a>
         
-        </li>
+        </li> 
       </ul>  
     );
 }

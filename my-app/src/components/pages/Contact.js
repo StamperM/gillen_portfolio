@@ -3,14 +3,14 @@ import React from 'react';
 export default function Contact(){
     return(
         <div>
-<div>
+ <div>
     <h2>Number</h2>
     <p>352-262-1985</p>
 </div>
 <div>
     <h2>Email</h2>
     <p>
-        <a href="mailto:melissagillen3@gamil.com"></a>
+        <a href="mailto:melissagillen3@gamil.com">melissagillen3@gamil.com</a>
     </p>
 
 </div>
@@ -25,7 +25,7 @@ export default function Contact(){
     <p>
        <a href='https://github.com/StamperM'></a> 
     </p>
-    </div>
+    </div> 
         </div>
     );
 }
