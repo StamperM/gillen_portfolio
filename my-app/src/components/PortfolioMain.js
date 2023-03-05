@@ -30,10 +30,10 @@ export default function PortfolioMain(){
         return <Contact/>;
     }
 
-     const pageChange = (page) => setCurrentPage(page);
+    const pageChange = (page) => setCurrentPage(page);
 return(
     <div>
-        <NavBar currentPage= {currentPage} PageChange= {PageChange}/> 
+        <NavBar currentPage= {currentPage} PageChange= {pageChange}/> 
         {/* renders page of the current useState */}
         {renderPage()}
     </div>

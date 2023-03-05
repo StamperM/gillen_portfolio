@@ -17,13 +17,13 @@ export default function Contact(){
 <div>
     <h2>LinkedIn</h2>
     <p>
-        <a href='https://www.linkedin.com/in/melissa-gillen-34995a67/?trk=public-profile-join-page' ></a>
+        <a title='linkedIn' href='https://www.linkedin.com/in/melissa-gillen-34995a67/?trk=public-profile-join-page' >Melissa Gillen</a>
     </p>
 </div>
 <div>
     <h2>GitHub</h2>
     <p>
-       <a href='https://github.com/StamperM'></a> 
+       <a title='githubAccount' href='https://github.com/StamperM'></a> 
     </p>
     </div> 
         </div>

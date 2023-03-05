@@ -1,18 +1,38 @@
 .App {
   text-align: center;
 }
-
+li p{
+  font-family: 'Cairo', sans-serif;
+}
 body{
   background-color:#18122B ;
   color: #cec4f1;
+
 }
+
 h1{
   color:635985;
+  font-family: 'Cinzel', serif;
 }
 nav{
   display: flex;
   
 }
+cust-active{
+  color: whitesmoke;
+}
+
+#pictureContainer{
+  width: 100px;
+  height: 50px;
+}
+
+img{
+  border-radius: 8px;
+  box-shadow: 5px 10px #3a3350 ;
+ 
+}
+
 .active{
   color: #cec4f1 ;
   background: #382e5a ;
