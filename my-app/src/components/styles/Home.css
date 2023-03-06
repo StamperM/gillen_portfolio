@@ -3,3 +3,12 @@ body{
     color: #eeedf4;
     font-family: 'Cinzel', serif;
 }
+
+.custom-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+
+}
+
+

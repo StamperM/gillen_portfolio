@@ -11,9 +11,15 @@ export default function NavBar(currentPage,pageChange){
         
         </li>
         <li className="nav">
-            <a href="/port" 
+            <a href="/about" 
            
             className={currentPage === 'About'? 'active' : 'nav-link'}>About</a>
+        
+        </li>
+        <li className="nav">
+            <a href="/portfolio" 
+           
+            className={currentPage === 'Portfolio'? 'active' : 'nav-link'}>Portfolio</a>
         
         </li>
         <li className="nav">

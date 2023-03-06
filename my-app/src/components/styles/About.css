@@ -1,0 +1,20 @@
+body{
+    background-color: #18122B ;
+    color: #eeedf4;
+    font-family: 'Cinzel', serif;
+}
+.custom-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+.row{
+   margin: 20px 100px;
+}
+.about-img{
+    height: 200px;
+}
+.item{
+    margin-top:150px ;
+
+}
