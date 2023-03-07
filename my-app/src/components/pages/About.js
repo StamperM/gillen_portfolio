@@ -1,5 +1,6 @@
 import React from 'react';
-import '../styles/About.css'
+import'../../App.css';
+import '../styles/About.css';
 
 export default function about(){
     return(
@@ -7,7 +8,7 @@ export default function about(){
             <div className='row'>
             <h1 className='item'>About Me</h1>
             <p className='item'>
-               things about me blah blah blah 
+            In my previous roles, I exercised leadership, communication, and good judgment in the contribution of team efforts and organizational improvements. I am open-minded and focused on new developments in my field. I have proven to be effective and motivational, with proficiency in critical thinking and collaborative work. I enjoy brainstorming and coordinating efforts to achieve a common goal.
             </p>   
             </div>
            

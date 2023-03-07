@@ -6,6 +6,7 @@ body{
 .custom-container{
     display: flex;
     justify-content: space-between;
+    margin: 100px;
 
 }
 .row{
@@ -15,6 +16,16 @@ body{
     height: 200px;
 }
 .item{
-    margin-top:150px ;
+    margin-top:150px;
 
+}
+h1{
+    margin: 20px;
+    text-align: center;
+}
+
+p{
+    padding: 70px;
+    margin: 20px;
+    text-align: center;
 }

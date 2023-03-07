@@ -1,14 +1,11 @@
-.App {
-  text-align: center;
+*{
+  background-color:#18122B ;
+  color: #cec4f1;
 }
 li p{
   font-family: 'Cairo', sans-serif;
 }
-body{
-  background-color:#18122B ;
-  color: #cec4f1;
 
-}
 
 h1{
   color:635985;
