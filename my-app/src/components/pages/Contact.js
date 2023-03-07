@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
 import {Link} from "react-router-dom";
-import { validateEmail } from "../../utils/emailHelper";
+import {validateEmail} from '../../utils/emailHelper'
 
 export default function Contact() {
   const [name, setName] = useState("");
@@ -11,7 +11,7 @@ export default function Contact() {
 
 
   const inputChange = (e) => {
-    let {target}=e;
+    const { target } = e;
     const inputType = target.name;
     const inputValue = target.value;
     
@@ -23,12 +23,16 @@ export default function Contact() {
         setName(inputValue);
     }
     
-   const handleSend= (e) =>{
-    e.preventDefault();
-    if(!validateEmail(email)|| !message ||!name){
-        setErrorMsg('Either email not valid or name and/or message is empty');
+    const sumbitEmail= (e) => {
+
+      e.preventDefault();
+  
+      if (!validateEmail(email)) {
+        setErrorMsg('Email or username is invalid');
+    
         return;
-    }
+    
+      }
     setName('');
     setMesage('');
     setEmail('');
@@ -64,12 +68,12 @@ export default function Contact() {
               type="text"
               name="message"
               value={message}
-              onChange={(e) => {
-                {inputChange} ;
-              }}
+              onChange= 
+                {inputChange} 
+             
             />
           </label>
-          <button type="button" className="btn cust-btn" onClick={handleSend}>
+          <button type="button" className="btn cust-btn" onClick={sumbitEmail}>
             <Link to="mailto:melissagillen3@gmail.com?message={}&body={message}">
               Submit
             </Link>

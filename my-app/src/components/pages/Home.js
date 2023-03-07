@@ -8,11 +8,11 @@ export default function Home(){
             <div className='row row-col-2 align-items-center'>
 
            
-            <div className='col'>
+            <div className='col home-cont'>
             <h2>Hi</h2>
             <h3>I'm Melissa Gillen</h3>
             </div>
-            <div className='col pictureContainer'>
+            <div className='col pictureContainer home-cont'>
                <img className="about-img" src='./melissa.jpg' alt='melissa'/>
             </div>
         </div>
