@@ -1,31 +1,71 @@
-import React from 'react';
+import React, { useState } from "react";
+import "../styles/contact.css";
+import {Link} from "react-router-dom";
+import validator from "validator";
 
-export default function Contact(){
-    return(
-        <div>
- <div>
-    <h2>Number</h2>
-    <p>352-262-1985</p>
-</div>
-<div>
-    <h2>Email</h2>
-    <p>
-        <a href="mailto:melissagillen3@gamil.com">melissagillen3@gamil.com</a>
-    </p>
+export default function Contact() {
+  const name = ([name, setName] = useState(""));
+  const message = ([message, setMesage] = useState(""));
+  const email = ([emailerr, setEmailerr] = useState(""));
+  const validateEmail = (e) => {
+    let email = e.target.value;
+    if (validator.isEmail(email)) {
+      setEmailerr("Valid Email :)");
+    } else {
+      setEmailErr("Enter valid email");
+    }
+    const emailSubject = (name) => {
+      setName(name);
+    };
+    const emailMessage = (message) => {
+      setMessage(message);
+    };
+    const sendEmail = (name, email, message) => {
+      emailMessage(message);
+      emailSubject(name);
+    };
 
-</div>
-<div>
-    <h2>LinkedIn</h2>
-    <p>
-        <a title='linkedIn' href='https://www.linkedin.com/in/melissa-gillen-34995a67/?trk=public-profile-join-page' >Melissa Gillen</a>
-    </p>
-</div>
-<div>
-    <h2>GitHub</h2>
-    <p>
-       <a title='githubAccount' href='https://github.com/StamperM'></a> 
-    </p>
-    </div> 
-        </div>
+    return (
+      <div>
+        <form>
+          <label>
+            Name
+            <input
+              type="text"
+              name="name"
+              value={name}
+              onChange={(e) => {
+                setName;
+              }}
+            />
+          </label>
+          <label>
+            Email
+            <input
+              type="text"
+              name="email"
+              value={email}
+              onChange={(e) => validateEmail(e)}
+            />
+          </label>
+          <label>
+            Message
+            <input
+              type="text"
+              name="message"
+              value={message}
+              onChange={(e) => {
+                setMessage;
+              }}
+            />
+          </label>
+          <button type="button" className="btn cust-btn" onClick={sendEmail}>
+            <Link to="mailto:melissagillen3@gmail.com?message={}&body={message}">
+              Submit
+            </Link>
+          </button>
+        </form>
+      </div>
     );
+  };
 }

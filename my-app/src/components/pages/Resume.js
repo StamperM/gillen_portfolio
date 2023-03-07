@@ -1,45 +1,15 @@
-// import React,{useState} from "react";
-// import{Document,Page} from 'react-pdf';
-// import pdfFile from '../pdf/resume.pdf';
-
-// export default function Resume(){
-// //     const[numPages, setNumPages] = useState(null);
-// //     const[pageNumber, setPageNumber]= useState(1);
-
-// //     function onDocumentLoadSuccess({numPages}){
-// //         setNumPages(numPages);
-// //     }
-// //     // used this code https://levelup.gitconnected.com/displaying-pdf-in-react-app-6e9d1fffa1a9
-// //     function changePage(offset){
-// //         setPageNumber(prevPageNumber=> prevPageNumber+ offset);
-// //     }
-// //     function previousPage(){
-       
-// //             changePage(-1);
-// //         }
-// //         function nextPage(){
-// //             changePage(1);
-// //         }
-
-// //         const{pdf} = props;
-// //     }
-// //     return(
-// //         <div className="resume">
-// // <Document file={pdf} onLoadSuccess = {onDocumentLoadSuccess}>
-// // <Page pageNumber={pageNumber}/>
-// // </Document>
-// // <p>
-// //     Page{pageNumber} of {numPages}
-// // </p>
-// // </div>>
+import React from 'react';
+// import { Document, Page } from 'react-pdf';
+import { Link } from 'react-router-dom';
+import resume from './resume.pdf';
+import '../styles/Resume.css'
+export default function Resume(){
    
-//     // );
+return(
 
-//     return(
-//         <div>
-//             <ReactPDF file={{
-//                 URL
-//             }}
-//         </div>
-//     )
-// }
+<div>
+<iframe className='resume' title='resume'src="https://docs.google.com/document/d/e/2PACX-1vRDTtHdWMlFUWCqHRNSslUmsXXYdhhfpwmKMUeba5lA6IJD2An_q8Fqc4nNTLsFviTIav_-nkhmOo94/pub?embedded=true"></iframe>
+<Link className ='res-download' to={resume} target="resume" download>Download</Link>
+</div>
+);
+}

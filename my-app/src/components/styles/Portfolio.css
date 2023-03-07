@@ -1,9 +1,11 @@
+*{
+    background-color:#18122B ;
+    color: #cec4f1;  
+}
 .pimg{
     border-radius: 2px;
     height: 200px;
 }
-.cust-card{
+div.col.card.cust-card{
     background-color:#18122B ;
-    color: #cec4f1;
-    border: none;
 }

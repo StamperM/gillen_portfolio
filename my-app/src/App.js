@@ -7,7 +7,7 @@ import Portfolio from './components/pages/Portfolio';
 import About from "./components/pages/About";
 import Resume from "./components/pages/Resume";
 import Footer from "./components/pages/Footer";
-
+import Contact from './components/pages/Contact';
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
       <Route path='/' element={<PortfolioMain/>} />
       <Route path='/portfolio' element={ <Portfolio/>}/>
       <Route path='/about' element={<About/>}/>
-      <Route path= '/resume' element={<Resume/>}/>
-
+       <Route path= '/resume' element={<Resume/>}/> 
+      <Route path ='/contact' element={<Contact/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>
