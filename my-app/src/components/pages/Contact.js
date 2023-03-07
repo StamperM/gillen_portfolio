@@ -1,29 +1,39 @@
 import React, { useState } from "react";
 import "../styles/contact.css";
 import {Link} from "react-router-dom";
-import validator from "validator";
+import { validateEmail } from "../../utils/emailHelper";
 
 export default function Contact() {
-  const name = ([name, setName] = useState(""));
-  const message = ([message, setMesage] = useState(""));
-  const email = ([emailerr, setEmailerr] = useState(""));
-  const validateEmail = (e) => {
-    let email = e.target.value;
-    if (validator.isEmail(email)) {
-      setEmailerr("Valid Email :)");
+  const [name, setName] = useState("");
+  const [message, setMesage] = useState("");
+  const  [email,setEmail] = useState("");
+  const [err, setErrorMsg]=useState('');
+
+
+  const inputChange = (e) => {
+    let {target}=e;
+    const inputType = target.name;
+    const inputValue = target.value;
+    
+    if(inputType==='email'){
+        setEmail(inputValue)
+    }else if (inputType==='message'){
+        setMesage(inputValue);
     } else {
-      setEmailErr("Enter valid email");
+        setName(inputValue);
     }
-    const emailSubject = (name) => {
-      setName(name);
-    };
-    const emailMessage = (message) => {
-      setMessage(message);
-    };
-    const sendEmail = (name, email, message) => {
-      emailMessage(message);
-      emailSubject(name);
-    };
+    
+   const handleSend= (e) =>{
+    e.preventDefault();
+    if(!validateEmail(email)|| !message ||!name){
+        setErrorMsg('Either email not valid or name and/or message is empty');
+        return;
+    }
+    setName('');
+    setMesage('');
+    setEmail('');
+   }
+   
 
     return (
       <div>
@@ -34,9 +44,9 @@ export default function Contact() {
               type="text"
               name="name"
               value={name}
-              onChange={(e) => {
-                setName;
-              }}
+              onChange=
+                {inputChange}
+              
             />
           </label>
           <label>
@@ -45,7 +55,7 @@ export default function Contact() {
               type="text"
               name="email"
               value={email}
-              onChange={(e) => validateEmail(e)}
+              onChange={inputChange}
             />
           </label>
           <label>
@@ -55,16 +65,21 @@ export default function Contact() {
               name="message"
               value={message}
               onChange={(e) => {
-                setMessage;
+                {inputChange} ;
               }}
             />
           </label>
-          <button type="button" className="btn cust-btn" onClick={sendEmail}>
+          <button type="button" className="btn cust-btn" onClick={handleSend}>
             <Link to="mailto:melissagillen3@gmail.com?message={}&body={message}">
               Submit
             </Link>
           </button>
         </form>
+        {err &&(
+            <div>
+                <p className="err-text"> {err}</p>
+       </div>
+        )}
       </div>
     );
   };
