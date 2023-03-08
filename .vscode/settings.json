@@ -1,5 +1,0 @@
-{
-    "gitlens.views.commits.files.compact": false,
-    "gitlens.views.branches.files.compact": false,
-    "gitlens.views.branches.files.layout": "tree"
-}
