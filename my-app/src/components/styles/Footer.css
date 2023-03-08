@@ -21,11 +21,3 @@ border: none;
 box-shadow: none;
     height: 20px;
 }
-.res-download{
-    background-color:#eeedf4;
-    padding: 3px;
-    border-radius: 9px;
-    box-shadow: 1px #44386c ;
-    color: #18122B;
-    text-decoration: none;
-}

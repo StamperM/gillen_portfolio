@@ -7,7 +7,7 @@ export default function Resume(){
    
 return(
 
-<div className='container'>
+<div className='container cust-container'>
     <div className='row'>
         <div className='col'>
         <Link className ='res-download' to={resume} target="resume" download>Download Resume</Link>

@@ -29,7 +29,7 @@ img{
  
 }
 
-.active{
+a:active{
   color: #cec4f1 ;
   background: #382e5a ;
 }
