@@ -1,5 +1,5 @@
 import React from "react";
-
+import'../components/styles/NavBar.css'
 export default function NavBar(currentPage,pageChange){
     return(
       <ul className="nav justify-content-end">

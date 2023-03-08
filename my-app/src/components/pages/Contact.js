@@ -22,7 +22,7 @@ export default function Contact() {
     } else {
         setName(inputValue);
     }
-    
+  }
     const sumbitEmail= (e) => {
 
       e.preventDefault();
@@ -40,11 +40,14 @@ export default function Contact() {
    
 
     return (
-      <div>
+      <div className="container cust-container">
         <form>
-          <label>
-            Name
+          <div className="row cust-row">
+          <label className="col">
+            Name  
+            
             <input
+            className="input-box"
               type="text"
               name="name"
               value={name}
@@ -53,18 +56,22 @@ export default function Contact() {
               
             />
           </label>
-          <label>
+         
+          
+          <label className="col">
             Email
             <input
+            className="input-box"
               type="text"
               name="email"
               value={email}
               onChange={inputChange}
             />
           </label>
-          <label>
+          <label className="col message-col">
             Message
             <input
+            className="message-box"
               type="text"
               name="message"
               value={message}
@@ -73,12 +80,15 @@ export default function Contact() {
              
             />
           </label>
+         
           <button type="button" className="btn cust-btn" onClick={sumbitEmail}>
-            <Link to="mailto:melissagillen3@gmail.com?message={}&body={message}">
+            <Link className="sub-btn" to="mailto:melissagillen3@gmail.com?message={}&body={message}">
               Submit
             </Link>
           </button>
+          </div>
         </form>
+        
         {err &&(
             <div>
                 <p className="err-text"> {err}</p>
@@ -87,4 +97,4 @@ export default function Contact() {
       </div>
     );
   };
-}
+

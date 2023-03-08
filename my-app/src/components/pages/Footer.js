@@ -3,7 +3,7 @@ import "../styles/Footer.css"
 
 export default function Footer() {
   return (
-    <div className="fixed-bottom  container">
+    <div className="fixed-bottom  container cust-footer">
       <div className="row footer-ow">
         <div className="col">
         <a

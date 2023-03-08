@@ -7,7 +7,10 @@ body{
 .custom-container{
     display: flex;
     justify-content: space-between;
-    align-content: center;
+    align-content: baseline;
+    flex-direction: row;
+    padding: 200px;
+    margin: 50px;
 
 }
 home-cont{
