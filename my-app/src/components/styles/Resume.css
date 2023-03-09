@@ -1,0 +1,29 @@
+body{
+    background-color: #18122B ;
+    color: #eeedf4;
+    font-family: 'Cinzel', serif;
+}
+
+iframe{
+    height: 100vh;
+    width: 100%;
+}
+.cust-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.cust-row{
+    justify-content: center;
+
+}
+.res-download{
+    background-color:#eeedf4;
+    padding: 3px;
+    border-radius: 9px;
+    box-shadow: 1px #44386c ;
+    color: #18122B;
+    text-decoration: none;
+    text-align: center;
+    width: 50px;
+}

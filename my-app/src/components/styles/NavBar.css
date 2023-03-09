@@ -1,0 +1,12 @@
+body{
+    background-color: #18122B ;
+    color: #eeedf4;
+    font-family: 'Cinzel', serif;
+}
+
+a:link{
+    color:#eeedf4;;
+}
+a:active{
+    color:#eeedf4;
+}
