@@ -10,7 +10,7 @@ export default function Footer() {
           title="linkedIn"
           href="https://www.linkedin.com/in/melissa-gillen-34995a67/?trk=public-profile-join-page"
         >
-         <img src='./LI-in-Bug.png' alt="linkedIn"/>
+         <img src='./LI-In-Bug.png' alt="linkedIn"/>
         </a>
         </div>
     <div className="col">
