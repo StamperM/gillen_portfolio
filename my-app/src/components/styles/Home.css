@@ -1,0 +1,21 @@
+body{
+    background-color: #18122B ;
+    color: #eeedf4;
+    font-family: 'Cinzel', serif;
+}
+
+.custom-container{
+    display: flex;
+    justify-content: space-between;
+    align-content: baseline;
+    flex-direction: row;
+    padding: 200px;
+    margin: 50px;
+
+}
+home-cont{
+    margin: 200px;
+    padding: 100px;
+}
+
+
