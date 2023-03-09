@@ -14,7 +14,8 @@
 
 
   ## Desciption
- THis   project   was an oprrutinity  to work with react whil createing a protiffolio   to hwlemp me in my job search. 
+ This project was an opportunity  to work with react to creating a portfolio that will me in my job search. 
+
 ![Site](https://user-images.githubusercontent.com/90412072/223907864-b2ca5b4f-610e-4f64-a100-490db998e2e2.png)
 
  
