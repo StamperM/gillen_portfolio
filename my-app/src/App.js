@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import PortfolioMain from './components/PortfolioMain';
-import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import {HashRouter, Routes, Route, BrowserRouter} from 'react-router-dom'
 import NavBar from './components/NavBar';
 import Portfolio from './components/pages/Portfolio';
 import About from "./components/pages/About";
@@ -12,14 +12,15 @@ import Contact from './components/pages/Contact';
 function App() {
   return (
    <div>
-    <NavBar/>
+   
     <BrowserRouter>
+     <NavBar/>
     <Routes>
       <Route path='/' element={<PortfolioMain/>} />
-      <Route path='./portfolio' element={ <Portfolio/>}/>
-      <Route path='./about' element={<About/>}/>
-       <Route path= './resume' element={<Resume/>}/> 
-      <Route path ='./contact' element={<Contact/>}/>
+      <Route path='/portfolio' element={ <Portfolio/>}/>
+      <Route path='/about' element={<About/>}/>
+       <Route path= '/resume' element={<Resume/>}/> 
+      <Route path ='/contact' element={<Contact/>}/>
     </Routes>
     <Footer/>
     </BrowserRouter>

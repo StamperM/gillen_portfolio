@@ -1,6 +1,6 @@
 import React from 'react';
 import '../styles/Home.css';
-
+import me from '../../images/melissa.jpg'
 
 export default function Home(){
     return(
@@ -13,7 +13,7 @@ export default function Home(){
             <h3>I'm Melissa Gillen</h3>
             </div>
             <div className='col pictureContainer home-cont'>
-               <img className="about-img" src='./melissa.jpg' alt='melissa'/>
+               <img className="about-img" src={me} alt='melissa'/>
             </div>
         </div>
         </div>
