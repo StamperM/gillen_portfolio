@@ -1,16 +1,24 @@
 {
   "files": {
-    "main.css": "/gillen_portfolio/static/css/main.05d1bac7.css",
-    "main.js": "/gillen_portfolio/static/js/main.d65e9bb8.js",
+    "main.css": "/gillen_portfolio/static/css/main.1a368b34.css",
+    "main.js": "/gillen_portfolio/static/js/main.655a7df2.js",
     "static/js/787.28cb0dcd.chunk.js": "/gillen_portfolio/static/js/787.28cb0dcd.chunk.js",
+    "static/media/caffiends.png": "/gillen_portfolio/static/media/caffiends.f21526865853a9284504.png",
+    "static/media/workoutsite.png": "/gillen_portfolio/static/media/workoutsite.5fee34061f6db35dc043.png",
+    "static/media/Soccer.png": "/gillen_portfolio/static/media/Soccer.d3abdc0f630a10e29f69.png",
+    "static/media/melissa.jpg": "/gillen_portfolio/static/media/melissa.65384ebac23e821c031f.jpg",
+    "static/media/poke.png": "/gillen_portfolio/static/media/poke.2d4680b901b621a76a2f.png",
+    "static/media/OldPortfolio.png": "/gillen_portfolio/static/media/OldPortfolio.a78fbc48a3244218c830.png",
     "static/media/resume.pdf": "/gillen_portfolio/static/media/resume.da575a03bb47b342df5f.pdf",
+    "static/media/Weather.png": "/gillen_portfolio/static/media/Weather.668770149b707df7bbe6.png",
     "index.html": "/gillen_portfolio/index.html",
-    "main.05d1bac7.css.map": "/gillen_portfolio/static/css/main.05d1bac7.css.map",
-    "main.d65e9bb8.js.map": "/gillen_portfolio/static/js/main.d65e9bb8.js.map",
+    "static/media/github.svg": "/gillen_portfolio/static/media/github.97ed8e7eef60d61ca469881dd6f34511.svg",
+    "main.1a368b34.css.map": "/gillen_portfolio/static/css/main.1a368b34.css.map",
+    "main.655a7df2.js.map": "/gillen_portfolio/static/js/main.655a7df2.js.map",
     "787.28cb0dcd.chunk.js.map": "/gillen_portfolio/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.05d1bac7.css",
-    "static/js/main.d65e9bb8.js"
+    "static/css/main.1a368b34.css",
+    "static/js/main.655a7df2.js"
   ]
 }
